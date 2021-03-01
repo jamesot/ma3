@@ -1,0 +1,64 @@
+//noinspection GradleCompatible
+apply plugin: 'com.android.application'
+//apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "com.digitalmatatus.ma3tycoon"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 11
+        versionName "1.1.1"
+//        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        externalNativeBuild {
+//            cmake {
+//                cppFlags ""
+//            }
+//        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//    externalNativeBuild {
+//        cmake {
+//            path "CMakeLists.txt"
+//        }
+//    }
+}
+
+dependencies {
+//    compile fileTree(dir: 'libs', include: ['*.jar'])
+    /*  androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+          exclude group: 'com.android.support', module: 'support-annotations'
+      })*/
+//    compile 'com.android.support:appcompat-v7:26.0.0-beta1'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    androidTestImplementation 'junit:junit:4.12'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'org.osmdroid:osmdroid-android:6.0.2'
+//    compile 'org.osmdroid:osmdroid-android:4.3'
+    implementation 'org.slf4j:slf4j-android:1.7.12'
+    implementation 'org.litepal.android:core:1.5.1'
+//    compile 'com.github.MKergall:osmbonuspack:6.3'
+//    compile 'com.mcxiaoke.volley:library:1.0.19'
+    implementation 'com.joooonho:selectableroundedimageview:1.0.1'
+//    implementation 'com.github.gabrielemariotti.cards:cardslib-core:2.1.0'
+    implementation 'tr.xip.errorview:library:3.0.0'
+    implementation 'org.locationtech.jts:jts-core:1.15.0'
+    implementation 'org.litepal.android:core:2.0.0'
+    implementation 'com.github.medyo:android-about-page:1.2.1'
+    implementation 'com.github.paolorotolo:appintro:4.0.0'
+    implementation 'io.nlopez.smartlocation:library:3.2.1'
+
+
+}

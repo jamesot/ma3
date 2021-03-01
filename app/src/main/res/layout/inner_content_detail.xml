@@ -1,0 +1,248 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dp">
+<!--60dp-->
+
+    <RelativeLayout
+        android:id="@+id/shiplabel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Shipper"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/shipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:text="vfdvf "
+        android:layout_toEndOf="@+id/shiplabel"
+        android:layout_toRightOf="@+id/shiplabel"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/dlabel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shipper"
+        android:layout_alignParentLeft="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Dispatch Date"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/dispatch_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:textColor="@android:color/black"
+        android:layout_toEndOf="@+id/dlabel"
+        android:layout_toRightOf="@+id/dlabel"
+        android:textSize="16sp"
+        android:layout_below="@+id/shipper"
+        />
+
+    <RelativeLayout
+        android:id="@+id/seallabel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dispatch_date"
+        android:layout_alignParentLeft="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Seal Number"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/seal_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/dlabel"
+        android:layout_toRightOf="@+id/dlabel"
+        android:layout_below="@+id/dispatch_date"/>
+
+    <RelativeLayout
+        android:id="@+id/pt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seal_no"
+        android:layout_alignParentLeft="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Product Type"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/product_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/pt"
+        android:layout_toRightOf="@+id/pt"
+        android:layout_below="@+id/seal_no"/>
+
+    <RelativeLayout
+        android:id="@+id/truckl"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_type"
+        android:layout_alignParentLeft="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Truck"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/truck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/truckl"
+        android:layout_toRightOf="@+id/truckl"
+        android:layout_below="@+id/product_type"/>
+
+    <RelativeLayout
+        android:id="@+id/tlabel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/truck"
+        android:layout_alignParentLeft="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Total No. of Boxes"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/total_boxes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/tlabel"
+        android:layout_toRightOf="@+id/tlabel"
+        android:layout_below="@+id/truck"/>
+
+
+    <TextView
+        android:id="@+id/action"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/carddemo_mayknow_add"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:text="Accept Delivery"
+        android:layout_below="@+id/total_boxes"/>
+
+    <TextView
+        android:id="@+id/d"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:text=""
+        android:layout_alignBottom="@+id/description"
+        android:layout_alignLeft="@+id/description"
+        android:layout_alignStart="@+id/description" />
+
+    <!--<com.like.LikeButton
+        app:icon_type="heart"
+        app:icon_size="25dp"
+        app:liked="false"
+        android:id="@+id/heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/description"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/carddemo_gplay_main_inner_subtitle"
+        android:layout_toEndOf="@+id/carddemo_gplay_main_inner_subtitle"/>-->
+<!--
+    <TextView
+        android:id="@+id/carddemo_gplay_main_inner_subtitle2"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/description"
+        android:layout_toLeftOf="@+id/shipper"
+        android:layout_toStartOf="@+id/shipper" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:textColor="#BBB"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/description"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@+id/carddemo_gplay_main_inner_subtitle2"
+        android:layout_toRightOf="@+id/carddemo_gplay_main_inner_subtitle2"
+        android:layout_marginLeft="30dp"/>-->
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#BBB"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+
+
+</RelativeLayout>

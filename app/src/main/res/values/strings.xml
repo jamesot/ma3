@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ma3 Tycoon</string>
+    <string name="title_activity_game_configuration">GameConfiguration</string>
+    <string name="title_activity_trivia_questions">TriviaQuestions</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_my_intro">Intro</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="error_title_damn">Sorry! Something went wrong, but we are looking into it.</string>
+    <string name="error_subtitle_failed_one_more_time">Failed one more time</string>
+    <string name="info_retrying">Reported</string>
+    <string name="report">Report</string>
+</resources>
